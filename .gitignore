@@ -1,0 +1,11 @@
+node_modules
+.idea
+.vscode
+*.рус
+.DS_Store
+Desktop.ini
+._*
+Thumbs.db
+.Spotlight-V100
+.Trashes
+Icon
