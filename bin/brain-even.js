@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 
 import nameRequest from '../src/cli.js';
-import cliBrainEven from "../src/cliBrainEven.js";
+import greetings from "../src/functions/greetings.js";
+import brainEvenGame from "../src/games/brainEvenGame.js";
 
-console.log('Welcome to the Brain Games!');
+greetings();
 
 const userName = nameRequest();
-cliBrainEven(userName);
+brainEvenGame(userName);
