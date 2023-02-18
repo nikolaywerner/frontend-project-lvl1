@@ -1,11 +1,11 @@
-import randomNumber from "../functions/randomNumber.js";
-import gameEngine from "../index.js";
+import randomNumber from '../functions/randomNumber.js';
+import gameEngine from '../index.js';
 
 const brainEvenGame = (name) => {
     console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
     const questionEngine = () => {
-        let number = randomNumber(1, 1000);
+        const number = randomNumber(1, 1000);
         console.log(`Question: ${number}`);
         let rightAnswer = '';
         if (number % 2 === 0) {
@@ -14,9 +14,9 @@ const brainEvenGame = (name) => {
             rightAnswer = 'no';
         }
         return rightAnswer;
-    }
+    };
 
     gameEngine(questionEngine, name);
-}
+};
 
 export default brainEvenGame;

@@ -1,4 +1,4 @@
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
 
 const gameEngine = (questionEngine, name) => {
     for (let i = 0; i < 3; i += 1) {
@@ -14,7 +14,6 @@ const gameEngine = (questionEngine, name) => {
             i = 4;
         }
     }
-}
+};
 
 export default gameEngine;
-

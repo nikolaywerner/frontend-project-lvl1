@@ -1,5 +1,5 @@
-import gameEngine from "../index.js";
-import randomNumber from "../functions/randomNumber.js";
+import gameEngine from '../index.js';
+import randomNumber from '../functions/randomNumber.js';
 
 const brainGcdGame = (name) => {
     console.log('Find the greatest common divisor of given numbers.');
@@ -7,8 +7,8 @@ const brainGcdGame = (name) => {
     const questionEngine = () => {
         let rightAnswer = 1;
         let maxCounter;
-        let firstNum = randomNumber(1, 50);
-        let secondNum = randomNumber(1, 50);
+        const firstNum = randomNumber(1, 50);
+        const secondNum = randomNumber(1, 50);
         if (secondNum >= firstNum) {
             maxCounter = firstNum;
         } else {
@@ -16,15 +16,15 @@ const brainGcdGame = (name) => {
         }
 
         for (let i = 1; i < maxCounter + 1; i += 1) {
-           if (firstNum % i === 0 && secondNum % i === 0) {
-               rightAnswer = i;
-           }
+            if (firstNum % i === 0 && secondNum % i === 0) {
+                rightAnswer = i;
+            }
         }
         console.log(`Question: ${firstNum} ${secondNum} (${rightAnswer})`);
         return String(rightAnswer);
-    }
+    };
 
     gameEngine(questionEngine, name);
-}
+};
 
 export default brainGcdGame;
