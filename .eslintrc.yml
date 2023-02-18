@@ -18,4 +18,4 @@ rules:
     - js: always
   indent:
     - error
-    - 4
+    - 2
