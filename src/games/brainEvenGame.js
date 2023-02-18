@@ -5,10 +5,10 @@ const brainEvenGame = (name) => {
     console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
     const questionEngine = () => {
-        let question = randomNumber(1, 1000);
-        console.log(`Question: ${question}`);
+        let number = randomNumber(1, 1000);
+        console.log(`Question: ${number}`);
         let rightAnswer = '';
-        if (question % 2 === 0) {
+        if (number % 2 === 0) {
             rightAnswer = 'yes';
         } else {
             rightAnswer = 'no';
